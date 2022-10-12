@@ -1,8 +1,10 @@
 function App() {
+  console.log("hello")
   return (
     <div className="App">
       <h1>Hello</h1>
-      <H1>My name is Abdul</H1>
+      <h1>My name is Abdul</h1>
+      
     </div>
   );
 }
