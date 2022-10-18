@@ -1,4 +1,5 @@
-
+import React from 'react'
+// Daniel
 const Profile = ()=>{
 
     return(
