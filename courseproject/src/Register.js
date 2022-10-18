@@ -1,5 +1,5 @@
 export const Register = () => {
-    return {
+    return (
         <>Register</>
-    }
+    )
 }
