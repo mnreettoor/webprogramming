@@ -1,0 +1,30 @@
+[
+    {
+        "studentId": 1001,
+        "Name": "Daniel",
+        "LastName":"Ospina",
+        "courses": ["Pr111","C++111","CompM1111","IS1111"]
+    },     
+            
+    {
+        "studentId": 1002,
+        "Name": "Dario",
+        "LastName":"Ospina",
+        "courses": ["Pr111", "C++111", "CompM1111", "IS1111"]
+    },
+           
+    {
+        "studentId": 1003,
+        "Name": "Abdulgafar",
+        "LastName":" Malik",
+        "courses": ["C++111","CompM1111", "IS1111"]
+    },
+    {
+        "studentId": 1004,
+        "Name": "Manpreet",
+        "LastName":" Kaur",
+        "courses": ["Net222", "Web222", "Pro222"]
+           
+    }
+ 
+]
