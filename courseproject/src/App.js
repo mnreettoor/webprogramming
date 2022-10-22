@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,Routes, Route  } from 'react-router-dom';
 import Home from './Pages/Home'
-import Login from './Pages/Login'
+import {Login} from './Pages/Login'
 import Profile from './Pages/Profile'
-import StudentRegistration from './Pages/StudentRegistration'
+import {StudentRegistration} from './Pages/StudentRegistration'
 import AddCourses from './Pages/AddCourses'
 import MyCourses from './Pages/MyCourses'
 import Header from './Components/Header'
