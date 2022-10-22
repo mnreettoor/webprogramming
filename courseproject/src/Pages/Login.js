@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import students from "../JSON/students.json"
 
 // Abdul
 export const Login = (props) => {
@@ -9,25 +10,12 @@ export const Login = (props) => {
     const handleSubmit = (e) =>{
 
         e.preventDefault();
-        console.log(email + " " + password)
-        console.log(students.some(e => e.email == email))
-        console.log(students.some(e => e.password == password))
-        console.log(students.includes(password))
         if(students.some(e => e.email == email) && students.some(e => e.password == password)) {
             navigate("../Profile");
         } else {
             alert("The user and password are not in our database")
         }
     }
-
-    const students = [
-        {email: "abc@gmail.com",
-        password: 123456},
-        {email: "zaz@hotmail.com",
-        password: 123456},
-        {email: "sample",
-        password: "sample"}
-    ]
 
     return(
         <div className="auth-form-container">

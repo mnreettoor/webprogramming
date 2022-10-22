@@ -15,8 +15,8 @@ class App extends Component {
       <Router>
         <Header/>
         <Routes>
+          <Route index element={<Login/>}/>
           <Route path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login/>}/>
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/student-registration" element={<StudentRegistration/>}/>
           <Route path="/add-courses" element={<AddCourses/>}/>
