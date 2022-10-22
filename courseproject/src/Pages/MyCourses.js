@@ -10,14 +10,12 @@ const MyCourses = ()=>{
     const [myCourses, setMyCourses] = useState(mycourses)
     const studentId = 1001;
     const student = myCourses.find(student => student.studentId === studentId)
-
     
-
     const handleDropCourse = (id) => {
-        setMyCourses(
+        //setMyCourses(
             student.courses.splice(id,1)
-        )
-        console.log(mycourses)
+        //)
+        console.log(student)
     }
 
     return (
