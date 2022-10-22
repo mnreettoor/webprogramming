@@ -7,7 +7,7 @@ import {StudentRegistration} from './Pages/StudentRegistration'
 import AddCourses from './Pages/AddCourses'
 import MyCourses from './Pages/MyCourses'
 import Header from './Components/Header'
-import './App.css';
+import './App.css'
 
 class App extends Component {
   render() {
