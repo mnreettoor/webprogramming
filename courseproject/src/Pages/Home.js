@@ -1,35 +1,6 @@
-import React, {useState} from 'react'
-
+import React from 'react'
 // Abdul
-function App (){
-    const [usernameReg, setUsenameReg] = useState('')
-    const [passwordReg, setPasswordReg] = useState('')
-  
-    return(
-        <div>
-            <h1>Registartion</h1>
-            <label>Full Name</label>
-            <input type="text" />
-            <label>Email Address</label>
-            <input type="text" />
-            <label>Username</label>
-            <input type="text" onChange={(e) =>{
-                setUsernameReg(e.target.value);
-            }} />
-            <label>Password</label>
-            <input type="text" onChange={(e) =>{
-                setPasswordReg(e.target.value);
-            }}/>
-            <label>Confirm Password</label>
-            <input type="text" />
-            <button>Register</button>
-        </div>
-    );
-}
-
-export default Home
-
-/*const Home = ()=>{
+const Home = ()=>{
 
     return(
         <>
@@ -38,4 +9,4 @@ export default Home
     )
 }
 
-export default Home*/
+export default Home
