@@ -4,17 +4,20 @@ import mypic from '../Images/profilePic3.jpg'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
 import { MdPerson } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { MdLibraryAdd } from "react-icons/md";
 import studentsJSON from "../mycoursesDaniel.json"
+import {useLocation} from 'react-router-dom';
 
 
 
 // Daniel
-const Profile = (props) => {
+const Profile = () => {
+    const location = useLocation();
+    console.log(location);
+
     let student = studentsJSON.find((student)=>student.studentId == 1003) //insted of 1001 we will pass props.id
     const [studentInfo, setStudentInfo]= useState({
         studentId:student.studentId ,
@@ -23,14 +26,13 @@ const Profile = (props) => {
         email:student.email, 
         cousrse: student.courses
     })
-
   
    
     return (
         <div>
             <h1 className='profileTitle'>Profile</h1>
 
-
+            
 
             {/* Student info  Card */}
             <div className='profileCard'>
