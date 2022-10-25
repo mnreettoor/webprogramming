@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../Images/logo.png'
-import { AiOutlineHome } from 'react-icons/ai';
 import {BiUserPlus} from 'react-icons/bi';
 import {AiOutlineAppstoreAdd} from 'react-icons/ai';
 import {BsBook} from 'react-icons/bs';
@@ -21,14 +20,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/"><AiOutlineHome style={{verticalAlign: "middle"}}/> Home</Nav.Link>
               <Nav.Link href="/student-registration"><BiUserPlus/> Student Registration</Nav.Link>
               <Nav.Link href="/add-courses"><AiOutlineAppstoreAdd/> Add Courses</Nav.Link>
               <Nav.Link href="/my-courses"><BsBook/> My Courses</Nav.Link>
             </Nav>
             <Nav>
             <Nav.Link href="/profile"><FaUser/> Profile</Nav.Link>
-            <Nav.Link href="/login"><RiLoginBoxFill/> Login</Nav.Link>
+            <Nav.Link href="/"><RiLoginBoxFill/> Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

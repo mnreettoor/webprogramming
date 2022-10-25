@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router,Routes, Route  } from 'react-router-dom';
-import Home from './Pages/Home'
-import {Login} from './Pages/Login'
+import Login from './Pages/Login'
 import Profile from './Pages/Profile'
 import {StudentRegistration} from './Pages/StudentRegistration'
 import AddCourses from './Pages/AddCourses'
 import MyCourses from './Pages/MyCourses'
 import Header from './Components/Header'
+import { useState } from "react";
 import './App.css'
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <Router>
         <Header/>
         <Routes>
-          <Route index element={<Login/>}/>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" index element={<Login/>}/>
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/student-registration" element={<StudentRegistration/>}/>
           <Route path="/add-courses" element={<AddCourses/>}/>
@@ -24,7 +22,6 @@ class App extends Component {
         </Routes>
       </Router>
     );
-  }
 }
 
 export default App;
