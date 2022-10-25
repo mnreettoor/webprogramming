@@ -11,7 +11,7 @@ const Login = ({setUser}, props) => {
     
     const handleSubmit = (e) =>{
         e.preventDefault();
-        if(students.some(e => e.email == email) && students.some(e => e.password == password)) {
+        if(students.some(e => e.email === email) && students.some(e => e.password === password)) {
             navigate("../Profile", {state:{email}});
         } else {
             alert("The user and password are not in our database")
