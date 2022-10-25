@@ -4,7 +4,7 @@ import students from "../JSON/students.json"
 import {Link} from "react-router-dom";
 
 // Abdul
-const Login = ({setUser}) => {
+const Login = ({setUser}, props) => {
     const navigate = useNavigate();
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
@@ -27,7 +27,7 @@ const Login = ({setUser}) => {
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
                 <label htmlfor="password">Password</label>
                 <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="***********" id="password" name="password" />
-                <button type="submit" onClick={handleSubmit}>Login</button>
+                <button type="submit" onClick={() => props.onFormSwitch('')}>Login</button>
 
             </form>
             {/*<button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>*/}
