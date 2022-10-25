@@ -17,7 +17,7 @@ const Login = ({setUser}) => {
             alert("The user and password are not in our database")
         }
     }
-    const something = "nothing";    
+   
 
     return(
         <div className="auth-form-container">
