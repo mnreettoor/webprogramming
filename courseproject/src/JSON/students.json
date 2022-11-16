@@ -1,8 +1,0 @@
-[
-    {"email": "abc@gmail.com",
-    "password": 123456},
-    {"email": "zaz@hotmail.com",
-    "password": 123456},
-    {"email": "sample",
-    "password": "sample"}
-]
